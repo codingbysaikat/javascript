@@ -1,0 +1,20 @@
+html>
+    <head></head>
+    <body>
+        <script>
+            var x=prompt("enter a latter");
+            var x=x.toLowerCase();
+            switch(x){
+                   case "a":
+                   case "e":
+                   case "i":
+                   case "o":
+                   case "u":
+                       document.write("vowel");
+                    break;
+                    default:
+                        document.write("consonent");
+                     }
+        </script>
+    </body>
+</html>
