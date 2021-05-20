@@ -1,0 +1,10 @@
+
+        <script>
+            var sum=0;
+            for(var i=1;i<=10;i=i+2){
+                var num1=prompt("inter the number");
+               var num2=prompt("inter the number");
+               sum=num1+num2;
+            }
+            document.write(""+sum)
+        </script>
