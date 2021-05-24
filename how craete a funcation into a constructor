@@ -1,0 +1,17 @@
+<script>
+            // how craete a funcation into a constructor...
+            function Student(name,age,lang){
+                this.name=name;
+                this.age=age;
+                this.lang=lang;
+                this.dispaly= function(){
+                    document.write(this.name);
+                    document.write(this.age);
+                    document.write(this.lang);
+                }
+
+            }
+            
+             var student1 = new Student("saikat",23,["bangla,English,hindi"]);
+             student1.dispaly();
+        </script>
