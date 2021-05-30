@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="javascript.css">
+    </head>
+    <body>
+        <div class="button-box">
+            <button onclick="mymessage1()">click1</button>
+            <button onclick="mymessage2()">click2</button>
+            <p id="pid"></p>
+
+        </div>
+       
+        
+        <script>
+            function mymessage1(){
+               
+                document.querySelector("#pid").innerHTML="saikat mondal";
+              
+                
+            }
+            function mymessage2(){
+                document.querySelector("#pid").innerHTML="sujan mondal";
+              
+                
+            }
+            
+        </script>
+    </body>
+</html>
