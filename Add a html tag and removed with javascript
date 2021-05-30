@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="javascript.css">
+    </head>
+    <body>
+        <div id="header">
+            <h1>siakt Mondal</h1>
+            <h1>welcome bangkadesh</h1>
+
+        </div>
+    
+        
+        
+        <script>
+            //adding a html tag 
+            var head1= document.createElement("h1");
+            var text= document.createTextNode("this is heading 3");
+            head1.appendChild(text);
+           var header1= document.getElementById("header")
+           header1.appendChild(head1);
+           // remove a html tag
+           var head2=document.getElementsByTagName("h1")[1];
+           header1.removeChild(head2);
+           // how add a new tag on the up??
+           var header0=document.createElement("h1");
+           var text0=document.createTextNode("heading-0");
+           var heading1=document.getElementsByTagName("h1")[0]
+           header0.appendChild(text0);
+           header1.insertBefore(header0,heading1)
+            
+        </script>
+    </body>
+</html>
