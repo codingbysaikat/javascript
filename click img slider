@@ -1,0 +1,47 @@
+<html>
+    <head>
+    <!--link rel="stylesheet" type="text/css" href="javascript.css">-->
+    </head>
+    <body>
+        <button onclick=" prev()">previous</button>
+        <img src="photo1.jpg " height="300px" width="500px">
+        <button onclick="next()">Next</button>
+        
+        
+        <script>
+            var photos=["photo1.jpg","photo2.jpg","photo3.jpg"];
+            var imgTag = document.querySelector("img");
+            var count=0;
+            function prev(){
+                count--;
+                if(count<0){
+                    count=photos.length-1;
+                    imgTag.src=photos[count];
+                }
+                else{
+                    imgTag.src=photos[count];
+
+                }
+
+            }
+            function next(){
+                count++;
+                if(count>=photos.length){
+                    count=0;
+                    imgTag.src=photos[count];
+                    
+                    
+                }
+                else{
+                    imgTag.src=photos[count];
+
+                }
+                
+
+
+            }
+
+            
+        </script>
+    </body>
+</html>
