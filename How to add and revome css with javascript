@@ -1,0 +1,32 @@
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="javascript.css">
+    </head>
+    <body>
+        <p id="pra" >Saikat Mondal</p>
+        <button onclick="add()">addstyle</button>
+        <button onclick="remove()">removestyle</button>
+
+        
+        <script>
+            
+            function add(){
+
+                var myPra= document.querySelector("#pra");
+               myPra.classList.add("prastyle")//prastyle is a css class
+
+
+
+            }
+            function remove(){
+                
+                var myPra= document.querySelector("#pra");
+               myPra.classList.remove("prastyle")
+
+            }
+
+
+        </script>
+           
+    </body>
+</html>
