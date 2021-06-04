@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="javascript.css">
+    </head>
+    <body>
+        <button>click me</button>
+        <h1>Bangladesh</h1>
+        
+        <script>
+           /* document.querySelector("button").addEventListener("click",myFunction)
+            function myFunction(){
+                alert("Hello")
+            }
+            
+           // use anonymous funcation into eventListener
+           document.querySelector("button").addEventListener("click",function(){ alert("HEllo")});
+           */
+          var myVar=document.querySelector("h1");
+          myVar.addEventListener("mouseover",function(){
+              myVar.classList.add("prastyle");
+          })
+          myVar.addEventListener("mouseout",function(){
+              myVar.classList.remove("prastyle");
+          })
+
+
+
+        </script>
+           
+    </body>
+</html>
