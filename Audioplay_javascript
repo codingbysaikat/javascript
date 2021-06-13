@@ -1,0 +1,43 @@
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="javascript.css">
+    </head>
+    <body>
+        <h1></h1>
+        <button class="mybuuton">button1</button>
+        <button class="mybuuton">button2</button>
+        <button class="mybuuton">button3</button>
+        
+        <script>
+            for(var i=0;i<3;i++){
+                document.querySelectorAll(".mybuuton")[i].addEventListener("click",function(){
+                var text=this.innerHTML;
+                audioplay(text);
+                
+            })
+
+            }
+            function audioplay(text){
+                switch(text){
+                    case"button1":
+                    var audio= new Audio("sounds/a.mp3");
+                    audio.play();
+                    break;
+                    case"button2":
+                    var audio= new Audio("sounds/b.mp3");
+                    audio.play();
+                    break;
+                    case"button3":
+                    var audio= new Audio("sounds/c.mp3");
+                    audio.play();
+                    break;
+
+                }
+               
+            }
+           
+
+        </script>
+           
+    </body>
+</html>
