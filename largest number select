@@ -1,0 +1,46 @@
+/* var n1=prompt("Inter a first number");
+var n2=prompt("inter a second number");
+var n3=prompt("inter a third number");
+if(n1>n2 && n1>n3){
+    document.write("n1 a highest number");
+}
+else if(n2>n1 && n2>n3){
+    document.write("n2 a higrest number");
+}
+else{
+    document.write("n3 is the higrest number in the total");
+}
+*/
+var n1=prompt("Enter the first number");
+var n2=prompt("Enter the second number");
+var n3=prompt("Enter the third number");
+var n4=prompt("Enter the fourth number");
+if(n1>n2){
+    if(n1>n3){
+        if(n1>n4){
+            document.write("n1 is the largest number")
+        }
+        else{
+            document.write("n4 is the largest number")
+        }
+    }
+}
+else if(n2>n3){
+    if(n2>n4){
+        document.write("n2 is the largest number")
+    }
+    else{
+        document.write("n4 is the largest number")
+    }
+
+}
+else{
+    if(n3>n4){
+        document.write("n3 is the largest number")
+    }
+    else{
+        document.write("n4 is the largest number")
+    }
+    
+
+}
