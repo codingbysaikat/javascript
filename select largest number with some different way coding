@@ -1,0 +1,39 @@
+var n1=prompt("Enter the first number");
+var n2=prompt("Enter the second number");
+var n3=prompt("Enter the third number");
+var n4=prompt("Enter the fourth number");
+if(n1>n2){
+    if(n1>n3){
+        if(n1>n4){
+            console.log(n1+"-n1 is the largest number")
+        }
+        else{
+            console.log(n4+"-n4 is the largest number")
+        }
+        
+    }
+    else{
+        if(n3>n4){
+            console.log(n3+"-n3 is the largest number")
+        }
+        else{
+            console.log(n4+"-n4 is the largest number")
+        }
+    }
+}
+else{
+    if(n2>n3){
+        if(n2>n4){
+            console.log(n2+"-n2 is the largest number")
+        }
+        else{
+            console.log(n4+"-n4 is the largest number")
+        }
+    }
+    else if(n3>n4){_
+        console.log(n3+"-n3 is the largest number")
+           }
+else{
+    console.log( n4+"-n4 is the largest number")
+}
+}
