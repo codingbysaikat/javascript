@@ -1,0 +1,33 @@
+// for in string/array/object
+// for of string/array
+let name= "I am laerning javascript";
+let food=["apple", "banana","liccy", "gouva"];
+let person={
+    name:"saikat",
+    age: 23,
+    varsity: "KUET",
+    country:"bangladesh",
+
+}
+// for in apply for index number...
+/*
+for(var x in name){
+    console.log(`index ${x} ans item ${name[x]}`)
+*/
+// for of apply valu...
+/*for ( var x of name){
+    console.log(`valu ${x}`)
+*/
+for(var y in food){
+    console.log(`index ${y} valu ${food[y]}`)
+}
+console.log("      next       ");
+//console.log(food)
+/*for(var z of food){
+    console.log(z)
+*/
+// for in apply on the object- we will get object property; object doesn't have index
+for( var k in person){
+    //console.log(k);
+    console.log(`property: ${k} valu: ${person[k]}`)
+}
