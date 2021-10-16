@@ -1,0 +1,18 @@
+var n= parseInt(prompt("enter the number of treams"));
+var sum=0;
+var series="";
+for(var i=1;i<=n;i++){
+    sum+=i**2;
+    series+= (i**2).toString();
+    if (i==n) {
+        
+         continue;
+        
+    }
+    series+="+";
+
+    
+    
+
+}
+console.log(`${series} = ${sum}`)
