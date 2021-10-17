@@ -1,0 +1,17 @@
+// foreach funcation use array 
+var food=["cake", "age", "apple","rice","met"];
+var number=[1,2,3,4,5,6,7];
+// 1st-pramater- Item 
+// 2nd-pramater-Index
+// 3rd-pramater- whole array
+food.forEach(function(Itmen,i,) {
+  console.log(`Index ${i} and Item${Itmen}`);
+  
+    
+})
+// array iteration use Maping
+function addsometing(Item){
+    return` ${Item} is food`
+}
+let arr_ss=food.map(addsometing);
+console.log(arr_ss)
