@@ -1,0 +1,15 @@
+// Normol funcation
+function funcation1(a,b){
+    console.log(a+b);
+}
+funcation1(2,3);
+// funcation expression
+let saysomething= function(){
+    console.log("say something");
+}
+//Arrow funcation(ES6)
+let arrow = () =>{
+    console.log("Hi I am an Arrow funcation")
+}
+
+arrow();
