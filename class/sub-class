@@ -1,0 +1,60 @@
+// class(ES6)
+//class is the tempelate for creating object
+let persone1={
+    first_name: "Saikat",
+    last_name:"Mondal",
+    date_of_barth:"21-08-1999",
+    //object method
+    fullname: function(){
+      return`${this.first_name } ${this.last_name}`;
+    }
+}
+let persone2={
+    first_name: "Sujan",
+    last_name:"Mondal",
+    date_of_barth:"21-08-1998",
+    full_name: function(){
+       console.log(`${this.first_name } ${this.last_name}`)
+    }
+}
+//console.log(persone1.fullname())
+//console.log(persone2)
+
+//how to write a class..............................
+
+class person{
+    constructor(fname,lname,dateofbarth){
+        this.first_name=fname,
+        this.last_name=lname,
+        this.date_of_barth=dateofbarth
+    }
+    // if we want we can set  a method but make method out of constructor
+    calculateAge(){
+        let birth_day = new Date(this.date_of_barth);
+        let diff= Date.now()- birth_day.getTime();
+        let agedate=new Date(diff);
+        return Math.abs(agedate.getUTCFullYear()-1970)
+    }
+    full_name() {
+        console.log(`${this.first_name} ${this.last_name}`)
+    }
+    // a static funcation....
+    static test(){
+        console.log(" I am static")
+    }
+
+}
+let persone3= new person("sumon","das","10-07-1998");
+//console.log(persone3.full_name());
+
+//sub-class----------------------------
+class sub_person extends person {
+    constructor(fname,lname,dateofbarth, age, phone){
+        super(fname,lname,dateofbarth);
+        this.age=age;
+        this.phone= phone;
+    }
+}
+let person4=new sub_person("khushik","mondal","21-07-21","22","0195678352");
+console.log(person4)
+console.log(person.test());
