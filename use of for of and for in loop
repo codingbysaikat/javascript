@@ -13,6 +13,7 @@ let person={
 /*
 for(var x in name){
     console.log(`index ${x} ans item ${name[x]}`)
+    }
 */
 // for of apply valu...
 /*for ( var x of name){
