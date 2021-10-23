@@ -1,0 +1,62 @@
+// now I start javascript programming. today our topic is DOM. how to manupuiate  a HTML Tag. ok now start.
+//Exploring the DOM
+/*var val;
+val=document.links;
+let larr= Array.from(val);
+larr.forEach(function(link){
+    console.log(link)
+})
+//console.log(val)
+*/
+// DOM seloctor by getElementById()
+var val;
+//val=document.getElementById('document');
+//val=document.getElementById('document').className;
+// changing style
+//val=document.getElementById('document');
+//val.innerHTML="<h2>save-content</h2>";
+
+// DOM seloctor with queryseloctor()
+//val=document.querySelector("#document")
+//val.style.color="red";
+/*val=document.querySelector(".class");
+val.innerHTML="<h1> change content</h1>";
+val.style.color="blue";
+val=document.querySelector("h3");
+val.innerHTML="<h1> change content</h1>";
+val.style.color="green";
+*/
+
+
+// we have work into below by the h1 tag. now we are the quearySeloctor on the ol, ul, li
+/*val=document.querySelector("ol li a");
+
+val=document.querySelector("li:last-child a");
+val=document.querySelector("ul li:nth-child(3) a");
+val.style.background="red";
+val.style.color="white";
+console.log(val);
+*/
+//multiple selector
+// first- getElementByClassName()
+// we make a some silimar className in the HTML tags
+var list=document.getElementsByClassName("class_list");
+list[0].style.background="red";
+
+// second- getElementByTagName();
+//list=document.getElementsByTagName("li");
+//list[5].style.background="red";
+// more deep
+list=document.querySelector("ol").getElementsByTagName("li");
+let lis= Array.from(list)
+lis.forEach(function(item){
+    console.log(item)
+
+});
+//let lis= new Array.from(list);
+
+console.log(list);
+// if we use getElementByID or getElementByClassName then don't work Array method. so in this
+// situation we convert  the element to the array
+
+// document.querySelectorAll()
