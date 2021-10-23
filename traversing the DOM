@@ -1,0 +1,32 @@
+// traversing the DOM
+let val;
+let list= document.querySelector("ul");
+let listItem= document.querySelector('ul li:first-child');
+val=list;
+val=listItem;
+// Get the child nodes
+val=list.childNodes;
+// val=list.childNodes[1];
+// val=list.childNodes[1].nodeName;
+// val=list.childNodes[1].nodeType;
+// 1 Element
+// 2 Attribute
+// 3 Text Node
+// 8 Comment
+// 9 Document Itself
+// 10 Doctype
+val=list.children;
+val=list.children[0];
+val=list.children[0].textContent="Microsoft"
+val=list.children[1].children[0].textContent="Apple";
+val=list.children[1].children[0].href;
+val=list.firstElementChild;
+//val=list.lastElementChild;
+val=list.parentElement;
+val=listItem;
+val=listItem.parentNode;
+val=listItem.parentNode.parentNode;
+val=listItem.nextSibling.nextSibling;
+// we can use as same previussibling tag for previous tag
+
+console.log(val);
