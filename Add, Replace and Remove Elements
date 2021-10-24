@@ -1,0 +1,42 @@
+// Add,replace and Remove Elements
+//create a Element
+/* let olItem= document.createElement("li");
+olItem.className='a new class';
+olItem.id='new_id';
+olItem.appendChild(document.createTextNode("javascript"));
+document.querySelector("ol").appendChild(olItem);
+//console.log(olItem)
+let ulItem=document.createElement('li');
+let link= document.createElement('a');
+link.appendChild(document.createTextNode('youtube'));
+link.setAttribute('href', 'http:www.youtube.com');
+ulItem.appendChild(link);
+//ulItem.appendChild(document.createTextNode('Youtube'));
+document.querySelector('ul').appendChild(ulItem);
+console.log(ulItem)
+*/
+// repleacing a Element
+/* let newh1=document.createElement('h3');
+newh1.appendChild(document.createTextNode('A new hedding'));
+let oldh1 = document.querySelector('h3');
+let pleace = document.querySelector(".container");
+pleace.replaceChild( newh1, oldh1);
+console.log(newh1);
+console.log(oldh1);
+console.log(pleace)
+*/
+// Remove Element
+let listItem= document.querySelectorAll('li');
+let listI= document.querySelector('ul');
+listI.classList.add('test');
+listI.classList.add('test-new');
+listI.classList.remove('class_list')
+let val= listI.hasAttribute('class');
+listI.setAttribute('tittle',' a new tittle');
+listI.removeAttribute('tittle')
+//listItem[0].remove();
+//listItem[4].remove();
+//listI.removeChild(listItem[6])
+console.log(listItem);
+console.log(listI);
+console.log(val)
