@@ -1,0 +1,24 @@
+// Reguler Expression
+// Parten march technique
+let re;
+let str;
+
+re=/hello/i; // case in insensitiv
+//re=/hello/;
+console.log(re.source);
+str='Hello word';
+str='Again Hello word';
+str="asdfHelloadss word";// if she get mach partern then she print it
+str='hello word hello'; //if she get two match then she take fist match
+// exec()- Retruns result in a array null
+let resut= re.exec(str);// first regular expession then string
+// test() it will retrun true and flase
+resut=re.test(str);
+// match() first string then expession
+resut=str.match(re);
+// search() retruns index first match or -1
+resut=str.search(re);
+// replace()
+str='hello word hello';
+resut= str.replace(re,'hi');
+console.log(resut);
