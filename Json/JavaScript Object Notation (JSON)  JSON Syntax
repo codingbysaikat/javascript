@@ -1,0 +1,13 @@
+// Json Syntax
+// write a object in javascript
+var javascript={
+    name:'saikat',
+    age:23,
+    class: "tharteen"
+}
+// convart a javascript object to the json object
+var convart_json= JSON.stringify(javascript);
+// convart a json object to the javascript object
+new_ob= JSON.parse(convart_json);
+console.log( convart_json);
+console.log(new_ob)
