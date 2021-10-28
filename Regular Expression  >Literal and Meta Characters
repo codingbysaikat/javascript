@@ -1,0 +1,17 @@
+// Literal  Characters
+let re;
+let str;
+re=/hello/i;
+str='hello how are you';
+retest(re,str);
+function retest(re,str){
+    if (re.test(str)) {
+        console.log(`${str}; match ${re.source}`)
+        
+    }
+    else{
+        console.log(`${str}; don't match ${ re.source}`)
+    }
+
+}
+// Meta Characters
