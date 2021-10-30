@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" 
+    integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h3 id="document" class="class_list"> some random contents</h3>
+        <ol class="class_list">
+        <li><a href="www.google.com">C++</a></li>
+        <li><a href="www.google.com">Java</a></li>
+        <li><a href="www.google.com">Phyton</a></li>
+        <li><a href="www.google.com">PHP</a></li>
+      </ol>
+
+    </div>
+    <hr>
+    <ul class="class_list">
+        <li><a href="www.google.com">Google</a></li>
+        <li><a href="www.Facebook.com">Facebook</a></li>
+        <li><a href="twitter.com">Twitter</a></li>
+        <li><a href="Instagram.com">Instagram</a></li>
+    </ul>
+    <hr>
+    <div class="container">
+        <button id="get_data"> button</button>
+        <div id="show">
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js">
+            
+    </script>
+    
+</body>
+</html>
