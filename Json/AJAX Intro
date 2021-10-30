@@ -1,0 +1,22 @@
+// Asynchronous Programming
+// AJAX = Asynchronous JavaScript And XML
+// Get data without loading the page
+document.getElementById("get_data").addEventListener('click',loaddata);
+
+function loaddata() {
+       // Create XHR Object (Xml Http Request)
+       let xhr= new XMLHttpRequest();
+       //open
+       xhr.open('GET', 'data.text', true);
+       xhr.onload = function(){
+           if (this.status === 200) {
+              
+            document.getElementById('show').innerHTML = `<h4>${this.responseText}</h4>`
+               //console.log(this.responseText)
+           }
+
+       }
+       xhr.send();
+console.log(xhr)
+
+}
