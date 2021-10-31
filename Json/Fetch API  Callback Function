@@ -43,3 +43,18 @@ function createpersone(persone, callback){
     
 
 };
+
+function getperson(){
+    setTimeout(function(){
+        let output='';
+        person.forEach(function(persone){
+            
+            output +=`<li>${persone.firstname} and ${persone.Lastname}</li>`
+            
+
+        });
+        document.getElementById('output').innerHTML=output;
+        
+    },1000);
+}
+createpersone({firstname:'sujan',Lastname:'mondal'}, getperson);
