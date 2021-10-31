@@ -1,0 +1,45 @@
+//call back funcation
+/* setTimeout(function(){
+console.log('hello saikat')
+
+},2000);
+*/
+//sencones
+/*
+let person=[
+    {firstname:'saikat',Lastname:'mondal'},
+    {firstname:'khushik',Lastname:'roy'}
+]
+function createpersone(persone){
+    setTimeout(function(){person.push(persone)},500)
+
+};
+
+function getperson(){
+    setTimeout(function(){
+        let output='';
+        person.forEach(function(persone){
+            
+            output +=`<li>${persone.firstname} and ${persone.Lastname}</li>`
+            
+
+        });
+        document.getElementById('output').innerHTML=output;
+        
+    },1000);
+}
+createpersone({firstname:'sujan',Lastname:'mondal'});
+getperson();
+*/
+//asienconass
+let person=[
+    {firstname:'saikat',Lastname:'mondal'},
+    {firstname:'khushik',Lastname:'roy'}
+]
+function createpersone(persone, callback){
+    setTimeout(function(){person.push(persone)
+        callback();
+    },2000);
+    
+
+};
