@@ -1,0 +1,29 @@
+let person=[
+    {firstname:'saikat',Lastname:'mondal'},
+    {firstname:'khushik',Lastname:'roy'}
+]
+function createpersone(persone){
+    let pro = new Promise( function(resolve, reject){
+        person.push(persone);
+        resolve();
+    });
+
+   return pro;
+    }
+    
+
+
+function getperson(){
+    setTimeout(function(){
+        let output='';
+        person.forEach(function(persone){
+            
+            output +=`<li>${persone.firstname} and ${persone.Lastname}</li>`
+            
+
+        });
+        document.getElementById('output').innerHTML=output;
+        
+    },1000);
+}
+createpersone({firstname:'sujan',Lastname:'mondal'}).then(getperson);
