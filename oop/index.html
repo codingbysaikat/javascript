@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <style>
+        .success , .error{
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+
+        }
+        .success{
+            background: green;
+        }
+        .error{
+            background: red;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3> add task</h3>
+        <form id="book_from">
+            <div>
+                <label for="tittle">tittle</label>
+                <input type="text" id="tittle" class="u-fill-with">
+            </div>
+            <div>
+                <label for="Author">Author</label>
+                <input type="text" id="author" class="u-fill-with">
+            </div>
+            <div>
+                <label for="isbn">ICBN#</label>
+                <input type="text" id="isbn" class="u-fill-with">
+            </div>
+            <div>
+                <input type="submit" value="submit" class="u-fill-with">
+            </div>
+
+        </form>
+        <table class="u-fill-with">
+            <thead>
+                <tr>
+                    <th> Tittle</th>
+                    <th>Author</th>
+                    <th> ISBN</th>
+                    <th></th>
+                </tr>
+                
+            </thead>
+            <tbody id="book-list">
+    
+            </tbody>
+
+        </table>
+        
+
+
+
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
