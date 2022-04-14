@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+  <tittle></tittle>
+  <style>
+    .class-1{
+
+      color: green;
+      cursor: pointer;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+ 
+    <p class="addclass"> bangladesh</p>
+    <p class="addclass"> India</p>
+    
+    
+   
+
+</div>
+<script>
+  var ignoreClickOnMeElement = document.querySelector('.addclass');
+  
+  
+</script>
+</body>
+
+</html>
+
+<script>
+  var ignoreClickOnMeElement = document.querySelector('.addclass');
+  console.log(ignoreClickOnMeElement);
+  ignoreClickOnMeElement.addEventListener('click',myfunction)
+  function myfunction(){
+    ignoreClickOnMeElement.classList.add('class-1');
+  }
+
+document.addEventListener('click', function(event) {
+    var isClickInsideElement = ignoreClickOnMeElement.contains(event.target);
+    if (!isClickInsideElement) {
+      ignoreClickOnMeElement.classList.remove('class-1');
+    }
+});
+</script>
