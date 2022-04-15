@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <tittle></tittle>
+  <style>
+    ul li{
+
+      
+      
+      list-style: none;
+    }
+    .class-1{
+      color: red;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+ 
+    
+    <ul>
+      <a href="#"><li onclick="myclick(this)">Bangladesh</li></a>
+      <a href="#"><li onclick="myclick(this)">India</li></a>
+      <a href="#"><li onclick="myclick(this)">Napal</li></a>
+      <a href="#"><li onclick="myclick(this)">Pakistan</li></a>
+      
+      
+      
+      
+      
+
+    </ul>
+   
+
+</div>
+<script>
+
+
+function myclick(values){
+    var val=values.innerText;
+    var x=0;
+    while(x<4){
+      var item=document.querySelector('ul');
+      var ecitem=item.children[x];
+      var itemtext=item.children[x].innerText;
+      
+      if(itemtext==val){
+        ecitem.classList.add('class-1');
+      }else{
+        ecitem.classList.remove('class-1');
+      }
+      x++;
+
+
+    }
+
+    
+
+  }
+
+ 
+</script>
+
+</body>
+
+</html>
+
+
